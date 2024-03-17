@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Realtime Chat App with Ably, NextJS and Vercel</title>
+        <link rel="icon" href="https://static.ably.dev/motif-red.svg?nextjs-vercel" type="image/svg+xml" />
+      </head>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
