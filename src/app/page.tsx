@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-const Chat = dynamic(() => import('./_components/Chat'), { ssr: false });
+const Chat = dynamic(() => import('~/app/_components/Chat'), { ssr: false });
 
 export default function Home() {
   return (
